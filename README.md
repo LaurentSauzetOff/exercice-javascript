@@ -12,7 +12,7 @@ Ce TP vise à enseigner les bases de l'automatisation en JavaScript en utilisant
 
 ## Prérequis
 
-- Node.js et npm installés.
+- Node.js et npm installés => ok
 - Connaissances de base en JavaScript.
 - Un compte Google avec accès à l'API YouTube Data.
 - Un serveur SMTP pour l'envoi d'e-mails (comme Gmail).
