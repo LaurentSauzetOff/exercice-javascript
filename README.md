@@ -17,6 +17,10 @@ Ce TP vise à enseigner les bases de l'automatisation en JavaScript en utilisant
 - Un compte Google avec accès à l'API YouTube Data.
 - Un serveur SMTP pour l'envoi d'e-mails (comme Gmail).
 
+## Attendus et problématique
+
+Voilà le problème à laquelle le script global doit répondre. Je dois envoyer les données analytics de ma chaine youtube à une personne qui gère les relations avec les créateurs de contenus au sein de Playstation France. L'objectif est de récupérer chaque mois ces données, les transformer en classeur excel avec différentes feuilles et envoyer ce classeur en pièce-jointe d'un mail qui sera généré par le script ET envoyé via un compte gmail. Pour plus d'infos contactes-moi si besoin
+
 ## Étapes du TP
 
 ### Étape 1: Configuration de l'Environnement
@@ -27,13 +31,24 @@ Ce TP vise à enseigner les bases de l'automatisation en JavaScript en utilisant
 ### Étape 2: Authentification à l'API YouTube Data
 
 1. Lire la documentation sur l'authentification OAuth 2.0.
-2. Configurer un projet et obtenir vos identifiants sur la console Google Cloud.
-3. Écrire le script d'authentification.
+2. Comprendre comment Configurer un projet et obtenir vos identifiants sur la console Google Cloud (lire ici https://cloud.google.com/resource-manager/docs/creating-managing-projects?hl=fr)
+3. M'envoyer un message pour que je te donnes les données d'authentification liées à cet exercice une fois que tu auras comprises la théorie.
+
+### Etape 2.5 : Rédiger toute la logique en pseudo-code
+
+A ce stade tu devrais avoir les infos nécessaires pour créer la logique complète du script en pseudo-code. Il faut vraiment y aller étape par étape, détailler correctement toute ta logique et
+ne pas coder mais plutot écrire genre :
+fonction recuperer-données () {
+SI () ALORS ...
+}
+
+Tu sais que tu as trois grandes parties : récupération des données, transformation des données puis enfin création et envoi du mail. Sers-t'en comme structure de ta logique en pseudo code.
+A ce stade il est important que tu mette à jour le dépot git au fur et à me sure pour que je comprenne comment tu avances et à quels endroits tu peux etre bloquée.
 
 ### Étape 3: Récupération des Données Analytics
 
-1. Explorer la documentation de l'API YouTube Analytics.
-2. Écrire la fonction pour récupérer les statistiques désirées de votre chaîne YouTube.
+1. Explorer la documentation de l'API YouTube Analytics (doc ici https://developers.google.com/youtube/analytics?hl=fr et ici https://developers.google.com/youtube/v3/docs?hl=fr)
+2. Écrire la fonction pour récupérer les statistiques désirées de la chaîne YouTube.
 
 ### Étape 4: Création d'un Fichier Excel
 
@@ -47,29 +62,15 @@ Ce TP vise à enseigner les bases de l'automatisation en JavaScript en utilisant
 
 ### Étape 6: Automatisation
 
-1. Programmer l'exécution du script à l'aide de `node-cron`.
+Pas la peine, sauf si tu veux que je te montre comment te servir de aws.
 
 ## Ressources
 
 - [Documentation API YouTube Data](https://developers.google.com/youtube/v3)
 - [Documentation `xlsx`](https://github.com/SheetJS/sheetjs)
 - [Documentation `nodemailer`](https://nodemailer.com/about/)
-- [Documentation `node-cron`](https://www.npmjs.com/package/node-cron)
 
-## Consignes de travail
 
-Suivez les instructions détaillées dans le dossier `instructions` où chaque étape est expliquée en détail avec des exemples de code et des exercices.
-
-## Évaluation
-
-Vous serez évalué sur :
-- La qualité et la clarté de votre code.
-- Votre compréhension des concepts mis en œuvre.
-- La réussite de l'automatisation de la tâche finale.
-
-## Contribution
-
-Si vous avez des questions ou des suggestions, n'hésitez pas à ouvrir une "issue" ou à soumettre un "pull request".
 
 ## Licence
 
